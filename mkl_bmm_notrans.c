@@ -18,11 +18,11 @@ int main(){
 	float c[batch_size * m * n];
 
 	for(i = 0; i < batch_size * m * k; i++) {
-		a[i] = (float)rand()/(float)(RAND_MAX);
+		a[i] = (float)rand()/(float)(RAND_MAX) + 0.01;
 	}
 
 	for(i = 0; i < batch_size * n * k; i++) {
-		b[i] = (float)rand()/(float)(RAND_MAX);
+		b[i] = (float)rand()/(float)(RAND_MAX) + 0.01;
 	}
 	
 	for(i = 0; i < batch_size * m * n; i++) {

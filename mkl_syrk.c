@@ -16,7 +16,7 @@ int main(){
 	float c_data[n * n];
         
 	for(i = 0; i < n * k; i++) {
-		a_data[i] = (float)(i + 1);
+		a_data[i] = (float)rand()/(float)(RAND_MAX) + 0.01;
 	}
 
     for(i = 0; i < n * n; i++) {
